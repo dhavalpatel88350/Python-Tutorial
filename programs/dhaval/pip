@@ -1,0 +1,7 @@
+python3
+python
+pip install django==2.1.5
+pip install Pillow
+pip install matplotlib  
+pip install django-jazzmin
+pip list

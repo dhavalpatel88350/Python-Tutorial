@@ -1,0 +1,134 @@
+{% load static %}
+<html>
+<head>
+    <title>Contact Us </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header_logo">
+                        <a><span>Grace A Beauty Collection</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <nav class="header_menu">
+                        <ul>
+                            <li><a href="{% url 'home' %}">Homqqe</a></li>
+                            <li><a href="women.html">Women's</a></li>
+                            <li><a href="men.html">Men's</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li class="active"><a>Contact Us</a></li>
+                            <li><a href="feedback.html">Feed Back</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="footer_get_touch_outer">
+        <div class="container">
+          <div class="footer_get_touch_inner grid-70-30">
+            <div class="colmun-70 get_form">
+              <div class="get_form_inner">
+                <div class="get_form_inner_text">
+                 <h3>Contact Us!!</h3>
+                </div>
+                <form action="" method="post">
+                  <input type="hidden" name="asd" value="2">
+                  <div class="grid-50-50">
+                    <label>Name :</label>
+                    <input type="text"  name="firstname"  placeholder="First Name">
+                    <label>Last Name:</label>
+                    <input type="text"  name="lastname" placeholder="Last Name">
+                    <label>Email :</label>
+                    <input type="email"  name="email" placeholder="Email">
+                    <label>Phone :</label>
+                    <input type="tel"  name="number" placeholder="Phone">
+                    <label>Comments:</label>
+                    <textarea placeholder="Add Your Comments"name="text" cols="20" rows="4"></textarea>
+                  </div>
+                  <div class="grid-full">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="colmun-30 get_say_form">
+              <h5>Hello There!</h5>
+              <ul class="get_say_info_sec">
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:">krunalsharma3131@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fa fa-whatsapp"></i>
+                  <a href="tel:">+91 6355053356</a>
+                </li>
+                
+              </ul>  
+              <ul class="get_say_social-icn">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>          
+            </div>        
+          </div>
+        </div>
+      </section>
+
+
+
+    
+
+
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2> QUICK LINKS </h2>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a> 
+            </div>
+            <div class="footer-heading footer-2">
+                 <h2>ACCOUNTS  </h2>
+                 <a href="#">My Account</a>
+                 <a href="#">Order Tracking</a>
+                 <a href="#">Whishlist</a>
+ 
+             </div>
+             <div class="footer-heading footer-3">
+                 <h2>SUPPORT </h2>
+                 <a href="#">Terms And Conditions</a>
+                 <a href="#">Privacy Policy</a>
+                 <a href="#">24/7 Support</a>
+             </div>
+             <div class="footer-email-form">
+                 <h2> JOIN OUR SITE</h2>
+                 <input type="email"  placeholder="Enter your email address" id="footer-email">
+                 <input type="submit" value="Sign Up" id="footer-email-btn">
+             </div>
+        </div>
+    </div>
+    
+ 
+ 
+ </body>
+ 
+ 
+ </html>

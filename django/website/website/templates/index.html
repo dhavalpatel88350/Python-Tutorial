@@ -1,0 +1,386 @@
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+   
+    <table border="2px">
+        <tr>
+            <td>name</td>
+            <td>email</td>
+        </tr>
+        
+        <tr>
+    
+    </table>
+    
+ 
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header_logo">
+                        {% for i in xyz %}
+                        <a><span>{{ i.name}}</span></a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <nav class="header_menu">
+                        <ul>
+                            <li class="active"><a>Home</a></li>
+                            <li><a href="women.html">Women's</a></li>
+                            <li><a href="men.html">Men's</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a>My Orders</a></li>
+                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            <li><a href="feedback.html">Feed Back</a></li>
+                            <li><a href="login.html">Login/Register</a></li>
+                  
+                            
+
+                        </ul>
+                    </nav>
+                </div>
+            
+                
+            </div>
+        </div>
+    </header>
+    <section class="categories">
+        <div class="container-fluid">
+            <div class="row1">
+                <div class="col-lg-6 p-0">
+                    <div class="categories_item categories_large_item">
+                        <img src="{% static 'image/category1.jpg' %}" alt="" class="img-fluid">
+                        <div class="categories_text">
+                            <h1>Women's fashion</h1>
+                            <p>15 items</p>
+                            <a href="women.html" >Buy now</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 p-0">
+                            <div class="categories_item">
+                                <img src="{% static 'image/category2.jpg' %}" alt="" class="img-fluid">
+                                <div class="categories_text">
+                                    <h4>Men's fashion</h4>
+                                    <p>15 items</p>
+                                    <a href="men.html">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 p-0">
+                            <div class="categories_item">
+                                <img src="{% static 'image/category3.jpg'%}" alt="" class="img-fluid">
+                                <div class="categories_text">
+                                    <h4>Body & Skin Care</h4>
+                                    <p>15 items</p>
+                                    <a href="#">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 p-0">
+                            <div class="categories_item">
+                                <img src="{% static 'image/category-4.jpg'%}" alt="" class="img-fluid">
+                                <div class="categories_text">
+                                    <h4>Cosmetics</h4>
+                                    <p>15 items</p>
+                                    <a href="">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 p-0">
+                            <div class="categories_item">
+                                <img src="{% static 'image/category5.jpg'%}" alt="" class="img-fluid">
+                                <div class="categories_text">
+                                    <h4>Accessory</h4>
+                                    <p>15 items</p>
+                                    <a href="">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h4>Offers And Discount Zone</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row property_gallery">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/F1.jpeg' %}" alt="">
+                            <div class="label new">New</div>
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href="#">Pink Cotton Lycra Knitted Tights</a></h6>
+                            <div class="product_price">Rs 599.0 <span>Rs 799.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f2.jpg' %}" alt="">
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href="">Women's Hosiery Cotton Night Suit</a></h6>
+                           
+                            <div class="product_price">Rs 699.0 <span>Rs 999.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f3.jpg' %}" alt="">
+                            <div class="label stockout">out of stock</div>
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href="">Jockey Zone Us17 S Innerwear Vests </a></h6>
+                           
+                            <div class="product_price">Rs 449.0 <span>Rs 849.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f4.jpg' %}" alt="">
+                           
+                        </div>
+                        <div class="product_item_text">
+                            
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br><h6><a href="">Jockey Men's Boxer Shorts</a></h6>
+                           
+                            <div class="product_price">Rs 899.0 <span>Rs 1199.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f5.jpg' %}" alt="">
+                           
+                        </div>
+
+
+
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href=""> Villain Snake Perfume Eau de Parfum - 100 ml</a></h6>
+                           
+                            <div class="product_price">Rs 699.0 <span>Rs 899.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f6.jpg' %}" alt="">
+                            <div class="label new">New</div>
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href="">Bath and Body Works Signature Collection for Men Ocean</a></h6>
+                           
+                            <div class="product_price">Rs 799.0 <span>Rs 1499.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f7.jpg' %}" alt="">
+                            <div class="label sale">Sale</div>
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href=""> M.a.c Compact Powder Plus Foundation</a></h6>
+                           
+                            <div class="product_price">Rs 59.0 <span>Rs 120.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product_item">
+                        <div class="product_item_pic">
+                            <img class="w-100" src="{% static 'image/product/f8.jpg' %}" alt="">
+                           
+                        </div>
+                        <div class="product_item_text">
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                   
+                                </button>
+                                <button type = "button" class = "btn-buy"><a href=""> buy now
+                                   
+                               </a> </button>
+                            </div>
+                            <br>
+                            <h6><a href=""> Philips BT3105/15 Professional Beard Trimmer Series 30</a></h6>
+                           
+                            <div class="product_price">Rs 1299.0 <span>Rs 2199.0</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+   
+    <section class="shop-method-area spad">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-method mb-40">
+                        <i class="fa fa-shopping-bag"></i>
+                        <h6>Free Shipping Method</h6>
+                        <p>Free Shipping On Orders Above Rs.499.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-method mb-40">
+                        <i class="fa fa-phone"></i>
+                        <h6>Customer Care</h6>
+                        <p>Our calling customer services is available On Monday to Saturday from 10.00 a.m to 9.00 p.m. </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-method mb-40">
+                        <i class="fa fa-lock"></i>
+                        <h6>Secure Payment System</h6>
+                        <p>Mobile payment apps are designed to free you from cash and credit cards by allowing you to digitally transfer funds to family, friends, or merchants.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+   <div class="footer-container">
+       
+       <div class="footer">
+           <div class="footer-heading footer-1">
+               <h2> QUICK LINKS </h2>
+               <a href="#">About</a>
+               <a href="#">Service</a>
+               <a href="#">Contact</a> 
+           </div>
+           <div class="footer-heading footer-2">
+                <h2>ACCOUNTS  </h2>
+                <a href="#">My Account</a>
+                <a href="#">Order Tracking</a>
+                <a href="#">Whishlist</a>
+
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>SUPPORT </h2>
+                <a href="#">Terms And Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">24/7 Support</a>
+            </div>
+            <div class="footer-email-form">
+                <h2> JOIN OUR SITE</h2>
+                <input type="email"  placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div>
+       </div>
+   </div>
+   
+   
+
+
+</body>
+</html>

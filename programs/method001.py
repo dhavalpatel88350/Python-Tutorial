@@ -1,0 +1,12 @@
+var = "Here's another way to think about sorting. Imagine 12that you125 are p5258laying a card528585 gam2582e. You're holding the cards in5555 your hand, and these cards are sorted. The dealer hands you exactly one new card. You have to put it into the correct place so that the cards you're holding are still sorted. In selection sort, each element that you add to the sorted subarray is no smaller than the elements already in the sorted subarray. But in our card example, the new card could be smaller than some of the cards you're already holding, and so you go down the line, comparing the new card against each card in your hand, until you find the place to put it. You insert the new card in the right place, and once again, your hand holds fully sorted cards. Then the dealer gives you another card, and you repeat the same procedure. Then another card, and another card, and so on, until the dealer stops giving you cards."
+b=var.split('.')
+c=b.count(b)
+# c=var.capitalize()
+# d=var.isnumeric()
+# print(b)
+print(c)
+# print(b)
+# x=input("old::")
+# y=input("new:;")
+# o=var.replace(x,y)
+# print(o)
